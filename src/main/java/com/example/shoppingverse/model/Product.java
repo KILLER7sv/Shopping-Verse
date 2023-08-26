@@ -30,8 +30,10 @@ public class Product {
 
     int availableQuantity;
 
+    @Enumerated(EnumType.STRING)
     ProductCategory category;
 
+    @Enumerated(EnumType.STRING)
     ProductStatus productStatus;
 
     @ManyToOne
